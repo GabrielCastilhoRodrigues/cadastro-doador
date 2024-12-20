@@ -1,0 +1,245 @@
+==== CONFIGS ====		
+{
+    "base_path": "c:\\projetos\\teste-integrarh\\backend",
+    "out": "c:\\projetos\\teste-integrarh\\backend\\javadoc",
+    "javadoc_executable": "C:\\Program Files\\Java\\jdk-23\\bin\\javadoc.exe",
+    "exclude": [],
+    "raw_params": ""
+}
+
+==== COMMAND ====
+"C:\Program Files\Java\jdk-23\bin\javadoc.exe" 
+	-sourcepath "c:\projetos\teste-integrarh\backend" 
+	-d "c:\projetos\teste-integrarh\backend\javadoc" 
+	"c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java"
+	"c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\DoadoresApplication.java"
+	"c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\entity\Doador.java"
+	"c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\repository\DoadoresRepository.java"
+	"c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\service\DoardoresService.java"
+	"c:\projetos\teste-integrarh\backend\doadores\src\test\java\com\doadores\doadores\DoadoresApplicationTests.java"
+
+
+==== JAVADOC OUTPUT ====
+Loading source file c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java...
+Loading source file c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\DoadoresApplication.java...
+Loading source file c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\entity\Doador.java...
+Loading source file c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\repository\DoadoresRepository.java...
+Loading source file c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\service\DoardoresService.java...
+Loading source file c:\projetos\teste-integrarh\backend\doadores\src\test\java\com\doadores\doadores\DoadoresApplicationTests.java...
+Constructing Javadoc information...
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:5: error: package org.springframework.beans.factory.annotation does not exist
+import org.springframework.beans.factory.annotation.Autowired;
+                                                   ^
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:6: error: package org.springframework.http does not exist
+import org.springframework.http.HttpStatus;
+                               ^
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:7: error: package org.springframework.http does not exist
+import org.springframework.http.RequestEntity;
+                               ^
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:8: error: package org.springframework.http does not exist
+import org.springframework.http.ResponseEntity;
+                               ^
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:9: error: package org.springframework.web.bind.annotation does not exist
+import org.springframework.web.bind.annotation.RequestBody;
+                                              ^
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:10: error: package org.springframework.web.bind.annotation does not exist
+import org.springframework.web.bind.annotation.RequestMapping;
+                                              ^
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:11: error: package org.springframework.web.bind.annotation does not exist
+import org.springframework.web.bind.annotation.RequestParam;
+                                              ^
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:12: error: package org.springframework.web.bind.annotation does not exist
+import org.springframework.web.bind.annotation.RestController;
+                                              ^
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:13: error: package org.springframework.web.multipart does not exist
+import org.springframework.web.multipart.MultipartFile;
+                                        ^
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:18: error: package org.springframework.web.bind.annotation does not exist
+import org.springframework.web.bind.annotation.DeleteMapping;
+                                              ^
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:19: error: package org.springframework.web.bind.annotation does not exist
+import org.springframework.web.bind.annotation.GetMapping;
+                                              ^
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:20: error: package org.springframework.web.bind.annotation does not exist
+import org.springframework.web.bind.annotation.PathVariable;
+                                              ^
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:21: error: package org.springframework.web.bind.annotation does not exist
+import org.springframework.web.bind.annotation.PostMapping;
+                                              ^
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:24: error: cannot find symbol
+@RestController
+ ^
+  symbol: class RestController
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:25: error: cannot find symbol
+@RequestMapping("/doadores")
+ ^
+  symbol: class RequestMapping
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\service\DoardoresService.java:7: error: package org.springframework.beans.factory.annotation does not exist
+import org.springframework.beans.factory.annotation.Autowired;
+                                                   ^
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\service\DoardoresService.java:8: error: package org.springframework.stereotype does not exist
+import org.springframework.stereotype.Service;
+                                     ^
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\service\DoardoresService.java:9: error: package org.springframework.web.multipart does not exist
+import org.springframework.web.multipart.MultipartFile;
+                                        ^
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\service\DoardoresService.java:13: error: package com.fasterxml.jackson.databind does not exist
+import com.fasterxml.jackson.databind.ObjectMapper;
+                                     ^
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\service\DoardoresService.java:15: error: cannot find symbol
+@Service
+ ^
+  symbol: class Service
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\entity\Doador.java:5: error: package jakarta.persistence does not exist
+import jakarta.persistence.Entity;
+                          ^
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\entity\Doador.java:6: error: package jakarta.persistence does not exist
+import jakarta.persistence.GeneratedValue;
+                          ^
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\entity\Doador.java:7: error: package jakarta.persistence does not exist
+import jakarta.persistence.GenerationType;
+                          ^
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\entity\Doador.java:8: error: package jakarta.persistence does not exist
+import jakarta.persistence.Id;
+                          ^
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\entity\Doador.java:10: error: cannot find symbol
+@Entity
+ ^
+  symbol: class Entity
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:51: error: cannot find symbol
+    public ResponseEntity<Doador> getDoadorById(@PathVariable Long id) {
+           ^
+  symbol:   class ResponseEntity
+  location: class DoadoresController
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:68: error: cannot find symbol
+    public ResponseEntity<String> excluir(@PathVariable Long id) {
+           ^
+  symbol:   class ResponseEntity
+  location: class DoadoresController
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:80: error: cannot find symbol
+    public ResponseEntity<Void> importarJson(@RequestParam("file") MultipartFile file) {
+                                                                   ^
+  symbol:   class MultipartFile
+  location: class DoadoresController
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:80: error: cannot find symbol
+    public ResponseEntity<Void> importarJson(@RequestParam("file") MultipartFile file) {
+           ^
+  symbol:   class ResponseEntity
+  location: class DoadoresController
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\repository\DoadoresRepository.java:3: error: package org.springframework.data.jpa.repository does not exist
+import org.springframework.data.jpa.repository.JpaRepository;
+                                              ^
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\repository\DoadoresRepository.java:4: error: package org.springframework.stereotype does not exist
+import org.springframework.stereotype.Repository;
+                                     ^
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\repository\DoadoresRepository.java:12: error: cannot find symbol
+public interface DoadoresRepository extends JpaRepository<Doador, Long>{
+                                            ^
+  symbol: class JpaRepository
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\repository\DoadoresRepository.java:11: error: cannot find symbol
+@Repository
+ ^
+  symbol: class Repository
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\service\DoardoresService.java:37: error: cannot find symbol
+    public void importaJson(MultipartFile file) throws IOException {
+                            ^
+  symbol:   class MultipartFile
+  location: class DoardoresService
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\DoadoresApplication.java:3: error: package org.springframework.boot does not exist
+import org.springframework.boot.SpringApplication;
+                               ^
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\DoadoresApplication.java:4: error: package org.springframework.boot.autoconfigure does not exist
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+                                             ^
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\DoadoresApplication.java:6: error: cannot find symbol
+@SpringBootApplication
+ ^
+  symbol: class SpringBootApplication
+c:\projetos\teste-integrarh\backend\doadores\src\test\java\com\doadores\doadores\DoadoresApplicationTests.java:3: error: package org.junit.jupiter.api does not exist
+import org.junit.jupiter.api.Test;
+                            ^
+c:\projetos\teste-integrarh\backend\doadores\src\test\java\com\doadores\doadores\DoadoresApplicationTests.java:4: error: package org.springframework.boot.test.context does not exist
+import org.springframework.boot.test.context.SpringBootTest;
+                                            ^
+c:\projetos\teste-integrarh\backend\doadores\src\test\java\com\doadores\doadores\DoadoresApplicationTests.java:6: error: cannot find symbol
+@SpringBootTest
+ ^
+  symbol: class SpringBootTest
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:28: error: cannot find symbol
+    @Autowired
+     ^
+  symbol:   class Autowired
+  location: class DoadoresController
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:32: error: cannot find symbol
+    public Doador salvar(@RequestBody Doador doador) {
+                          ^
+  symbol:   class RequestBody
+  location: class DoadoresController
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:31: error: cannot find symbol
+    @PostMapping({"", "/"})
+     ^
+  symbol:   class PostMapping
+  location: class DoadoresController
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:40: error: cannot find symbol
+    @GetMapping({"", "/"})
+     ^
+  symbol:   class GetMapping
+  location: class DoadoresController
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:51: error: cannot find symbol
+    public ResponseEntity<Doador> getDoadorById(@PathVariable Long id) {
+                                                 ^
+  symbol:   class PathVariable
+  location: class DoadoresController
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:50: error: cannot find symbol
+    @GetMapping("/{id}")
+     ^
+  symbol:   class GetMapping
+  location: class DoadoresController
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:68: error: cannot find symbol
+    public ResponseEntity<String> excluir(@PathVariable Long id) {
+                                           ^
+  symbol:   class PathVariable
+  location: class DoadoresController
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:67: error: cannot find symbol
+    @DeleteMapping("/{id}")
+     ^
+  symbol:   class DeleteMapping
+  location: class DoadoresController
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:80: error: cannot find symbol
+    public ResponseEntity<Void> importarJson(@RequestParam("file") MultipartFile file) {
+                                              ^
+  symbol:   class RequestParam
+  location: class DoadoresController
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\controller\DoadoresController.java:79: error: cannot find symbol
+    @PostMapping("/importar")
+     ^
+  symbol:   class PostMapping
+  location: class DoadoresController
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\entity\Doador.java:16: error: cannot find symbol
+    @Id
+     ^
+  symbol:   class Id
+  location: class Doador
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\entity\Doador.java:17: error: cannot find symbol
+    @GeneratedValue(strategy = GenerationType.AUTO)
+     ^
+  symbol:   class GeneratedValue
+  location: class Doador
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\entity\Doador.java:17: error: cannot find symbol
+    @GeneratedValue(strategy = GenerationType.AUTO)
+                               ^
+  symbol:   variable GenerationType
+  location: class Doador
+c:\projetos\teste-integrarh\backend\doadores\src\main\java\com\doadores\doadores\service\DoardoresService.java:18: error: cannot find symbol
+    @Autowired
+     ^
+  symbol:   class Autowired
+  location: class DoardoresService
+c:\projetos\teste-integrarh\backend\doadores\src\test\java\com\doadores\doadores\DoadoresApplicationTests.java:9: error: cannot find symbol
+	@Test
+	 ^
+  symbol:   class Test
+  location: class DoadoresApplicationTests
+55 errors
+
+
