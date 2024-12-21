@@ -19,8 +19,8 @@ public class DoacaoService {
         Doador receptor = doadoresRepository.findById(receptorId)
                 .orElseThrow(() -> new IllegalArgumentException("Receptor não encontrado"));
 
-        TipoSanguineo tipoDoador = doador.getTipoSanguineo();
-        TipoSanguineo tipoReceptor = receptor.getTipoSanguineo();
+        TipoSanguineo tipoDoador = doador.getTipo_Sanguineo();
+        TipoSanguineo tipoReceptor = receptor.getTipo_Sanguineo();
 
         return tipoDoador.podeDoarPara(tipoReceptor);
     }

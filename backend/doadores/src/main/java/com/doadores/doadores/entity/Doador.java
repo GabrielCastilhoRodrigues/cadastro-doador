@@ -2,6 +2,7 @@ package com.doadores.doadores.entity;
 
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import jakarta.persistence.Entity;
@@ -30,6 +31,9 @@ public class Doador {
     @JsonProperty("nome")
     private String nome;
 
+    @JsonProperty("cpf")
+    private String cpf;
+
     /**
      * RG do Doador.
      */
@@ -40,6 +44,7 @@ public class Doador {
      * Data de Nascimento do Doador.
      */
     @JsonProperty("data_nasc")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
     private Date data_nasc;
 
     /**
@@ -143,6 +148,15 @@ public class Doador {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+
+    public String getCpf() {
+        return this.cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 
     public String getRg() {
@@ -273,11 +287,11 @@ public class Doador {
         this.peso = peso;
     }
 
-    public TipoSanguineo getTipoSanguineo() {
+    public TipoSanguineo getTipo_Sanguineo() {
         return tipo_sanguineo;
     }
 
-    public void setTipoSanguineo(TipoSanguineo tipo_sanguineo) {
+    public void setTipo_Sanguineo(TipoSanguineo tipo_sanguineo) {
         this.tipo_sanguineo = tipo_sanguineo;
     }
 }

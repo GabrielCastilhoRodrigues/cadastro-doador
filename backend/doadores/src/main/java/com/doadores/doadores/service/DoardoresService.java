@@ -12,9 +12,12 @@ import com.doadores.doadores.entity.Doador;
 import com.doadores.doadores.repository.DoadoresRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import lombok.extern.slf4j.Slf4j;
+
 /**
  * Service para a entidade Doador.
  */
+@Slf4j
 @Service
 public class DoardoresService {
 
@@ -79,7 +82,9 @@ public class DoardoresService {
     public void importaJson(MultipartFile file) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
         Doador[] doadores = mapper.readValue(file.getInputStream(), Doador[].class);
+
         for (Doador doador : doadores) {
+            log.info("importando doador: {}", doador);
             salvar(doador);
         }
     }

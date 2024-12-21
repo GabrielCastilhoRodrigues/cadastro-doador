@@ -124,6 +124,7 @@ public class DoadoresController {
             doadoresService.importaJson(file);
             return ResponseEntity.ok().build();
         } catch (Exception e) {
+            System.out.println(e.getMessage());
             return ResponseEntity.badRequest().build();
         }
     }
