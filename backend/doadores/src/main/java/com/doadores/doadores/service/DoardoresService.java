@@ -28,9 +28,9 @@ public class DoardoresService {
      * Salva o Doador na base de dados.
      * 
      * @param doador
-     *               O Doador que deve ser inserido na base de dados.
+     *   O Doador que deve ser inserido na base de dados.
      * @return
-     *         Os dados do Doador inserido.
+     *   Os dados do Doador inserido.
      */
     public Doador salvar(Doador doador) {
         return doadoresRepository.save(doador);
@@ -40,7 +40,7 @@ public class DoardoresService {
      * Retorna uma lista com todos os Doadores cadastrados.
      *
      * @return
-     *         Uma lista com todos os Doadores cadastrados.
+     *   Uma lista com todos os Doadores cadastrados.
      */
     public List<Doador> getTodosDoadores() {
         return doadoresRepository.findAll();
@@ -50,9 +50,9 @@ public class DoardoresService {
      * Retorna um Doador com base do ID informado.
      *
      * @param id
-     *           ID do Doador.
+     *   ID do Doador.
      * @return
-     *         O Doador com base do ID informado.
+     *   O Doador com base do ID informado.
      */
     public Optional<Doador> getDoador(Long id) {
         return doadoresRepository.findById(id);
@@ -62,7 +62,7 @@ public class DoardoresService {
      * Exclui o Doador com base do ID informado.
      * 
      * @param id
-     *           ID do Doador.
+     *   ID do Doador.
      */
     public void excluir(Long id) {
         doadoresRepository.deleteById(id);
@@ -72,7 +72,7 @@ public class DoardoresService {
      * Realiza a importação de um arquivo JSON, contendo os Doadores.
      *
      * @param file
-     *             O arquivo com as informações.
+     *   O arquivo com as informações.
      *
      * @throws IOException Uma exceção ao tentar acessar o arquivo.
      */

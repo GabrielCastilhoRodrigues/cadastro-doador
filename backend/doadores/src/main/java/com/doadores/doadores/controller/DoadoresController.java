@@ -5,7 +5,6 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.doadores.doadores.entity.Doador;
+import com.doadores.doadores.service.DoacaoService;
 import com.doadores.doadores.service.DoardoresService;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -30,6 +30,9 @@ public class DoadoresController {
 
     @Autowired
     private DoardoresService doadoresService;
+
+    @Autowired
+    private DoacaoService doacaoService;
 
     /**
      * Método POST para inserir um Doador.
@@ -125,4 +128,21 @@ public class DoadoresController {
         }
     }
 
+    @GetMapping("/doacao")
+    public ResponseEntity<String> realizaDoacao(@RequestParam("doador") Long idDoador,
+        @RequestParam("receptor") Long idReceptor) {
+        try {
+            boolean isDoacaoValida = doacaoService.validarDoacao(idDoador, idReceptor);
+
+            if (isDoacaoValida) {
+                return new ResponseEntity<String>("Doação realizada com sucesso",
+                        HttpStatus.OK);
+            }
+
+            return new ResponseEntity<String>("Doação não é válida", HttpStatus.BAD_REQUEST);
+        }
+        catch (Exception e) {
+            return new ResponseEntity<String>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
+    }
 }

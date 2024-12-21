@@ -2,7 +2,11 @@ package com.doadores.doadores.entity;
 
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -17,98 +21,117 @@ public class Doador {
      * ID do Doador.
      */
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     /**
      * Nome do Doador.
      */
+    @JsonProperty("nome")
     private String nome;
 
     /**
      * RG do Doador.
      */
+    @JsonProperty("rg")
     private String rg;
 
     /**
      * Data de Nascimento do Doador.
      */
+    @JsonProperty("data_nasc")
     private Date data_nasc;
 
     /**
      * Sexo do Doador.
      */
+    @JsonProperty("sexo")
     private String sexo;
 
     /**
      * Nome da mãe do Doador.
      */
+    @JsonProperty("mae")
     private String mae;
 
     /**
      * Nome do pai do Doador.
      */
+    @JsonProperty("pai")
     private String pai;
 
     /**
      * Email do Doador.
      */
+    @JsonProperty("email")
     private String email;
 
     /**
      * CEP do Endereço do Doador.
      */
+    @JsonProperty("cep")
     private String cep;
 
     /**
      * Endereço do Doador.
      */
+    @JsonProperty("endereco")
     private String endereco;
 
     /**
      * Número do endereço do Doador.
      */
+    @JsonProperty("numero")
     private int numero;
 
     /**
      * Bairro do endereço do Doador.
      */
+    @JsonProperty("bairro")
     private String bairro;
 
     /**
      * Cidade do endereço do Doador.
      */
+    @JsonProperty("cidade")
     private String cidade;
 
     /**
      * Estado do endereço do Doador.
      */
+    @JsonProperty("estado")
     private String estado;
 
     /**
      * Número do telefone fixo do Doador.
      */
+    @JsonProperty("telefone_fixo")
     private String telefone_fixo;
 
     /**
      * Número do celular do Doador.
      */
+    @JsonProperty("celular")
     private String celular;
 
     /**
      * Altura do Doador.
      */
+    @JsonProperty("altura")
     private Double altura;
 
     /**
      * Peso do Doador.
      */
+    @JsonProperty("peso")
     private Double peso;
 
     /**
      * Tipo Sanguíneo do Doador.
      */
-    private String tipo_sanguineo;
+    @Enumerated(EnumType.STRING)
+    @JsonProperty("tipo_sanguineo")
+    private TipoSanguineo tipo_sanguineo;
 
     public Long getId() {
         return this.id;
@@ -250,11 +273,11 @@ public class Doador {
         this.peso = peso;
     }
 
-    public String getTipo_sanguineo() {
-        return this.tipo_sanguineo;
+    public TipoSanguineo getTipoSanguineo() {
+        return tipo_sanguineo;
     }
 
-    public void setTipo_sanguineo(String tipo_sanguineo) {
+    public void setTipoSanguineo(TipoSanguineo tipo_sanguineo) {
         this.tipo_sanguineo = tipo_sanguineo;
     }
 }
