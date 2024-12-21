@@ -31,6 +31,9 @@ public class Doador {
     @JsonProperty("nome")
     private String nome;
 
+    /**
+     * CPF do Doador.
+     */
     @JsonProperty("cpf")
     private String cpf;
 
